@@ -85,8 +85,8 @@ def turn_count
   @board.count{|token| token == "X" || token == "O"}
 end
 
-def move(board, index, player)
-  board[index] = player
+def move(index, player)
+  @board[index] = player
 end
 
 def winner(board)
