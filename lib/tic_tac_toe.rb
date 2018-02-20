@@ -77,7 +77,7 @@ def position_taken?(board, index)
   board[index]== "X" || board[index] == "O"
 end
 
-def current_player(board)
+def current_player
   turn_count(board) % 2 == 0 ? "X" : "O"
 end
 
